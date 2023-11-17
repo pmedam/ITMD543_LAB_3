@@ -26,7 +26,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Routes
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   const files = fs.readdirSync('uploads');
