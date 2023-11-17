@@ -16,7 +16,7 @@
     </form>
 
     <h2>File List</h2>
-    <ul>
+    <!-- <ul>
         <% files.forEach(file=> { %>
             <li>
                 <%= file %>
@@ -27,7 +27,19 @@
                     </form>
             </li>
             <% }); %>
-    </ul>
+    </ul> -->
+    <table>
+        <% files.forEach(file=> { %>
+            <li>
+                <%= file %>
+                    <a href="/download/<%= encodeURIComponent(file) %>">Download</a>
+                    <form action="/delete" method="post">
+                        <input type="hidden" name="fileName" value="<%= file %>">
+                        <button type="submit">Delete</button>
+                    </form>
+            </li>
+            <% }); %>
+    </table>
 </body>
 
 </html>
