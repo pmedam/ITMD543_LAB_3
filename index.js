@@ -39,7 +39,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 })
 
 
-
+//down
 app.get('/download/:fileName', (req, res) => {
   const fileName = req.params.fileName;
   const filePath = path.join('uploads', fileName);
@@ -52,7 +52,7 @@ app.get('/download/:fileName', (req, res) => {
 });
 
 
-
+//delete
 app.post('/delete', urlencodedParser, (req, res) => {
   const fileName = req.body.fileName;
   const filePath = path.join('uploads', fileName);
