@@ -12,6 +12,7 @@
     body {
         font-family: Arial, sans-serif;
         margin: 20px;
+        background: linear-gradient(to bottom, #8000ff, #3333ff);
     }
 
     h1 {
@@ -25,28 +26,40 @@
     table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    th,
-    td {
+    th,td {
         border: 1px solid #ddd;
-        padding: 12px;
+        padding: 2px;
         text-align: left;
     }
-
-    /* th {
-    background-color: #f2f2f2;
-} */
 
     th {
         background: linear-gradient(to right, #3498db, #6dd5fa);
         color: white;
     }
 
+    th:nth-child(1), td:nth-child(1) {
+        width: 10%;
+    }
+
+    /* Set a fixed width for the File Name column if needed */
+    th:nth-child(2), td:nth-child(2) {
+        width: 60%;
+    }
+
+    /* Set a fixed width for the Action column if needed */
+    th:nth-child(3), td:nth-child(3) {
+        width: 20%;
+    }
+
     button {
-        padding: 8px 12px;
+        padding: 5px 10px;
         cursor: pointer;
+        margin-right: 5px;
+        border-radius: 5px;
+        background-color:lightslategray
     }
 
     button:hover {
@@ -67,31 +80,59 @@
         border: none;
         padding: 0;
     }
+
+    input {
+        background-color: black;
+        color: green;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:10px 20px;
+        cursor: pointer;
+        animation: bounce 1s infinite;
+    }
+    input:hover{
+        background-color: orangered;
+        color: white;
+    }
+    @keyframes bounce {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+       100%{
+            transform: translateY(0);
+        }
+    }
+    @media screen and (max-width: 768px) {
+    #container {
+        padding: 20px;
+    }
+}
+    
 </style>
 
 <body>
     <h1>File Upload App</h1>
+    <br><br>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <div>
-            <input type="file" name="file" required>
-            <i class="bi bi-folder"></i> 
-           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-folder"
-               viewBox="0 0 16 16">
-               <path
-                   d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z" />
-           </svg>
+            <input type="file" name="file" class ="jumping" required>
         </div>
-
-        <button type="submit" class="uploadbutton">
-            <i class="bi bi-cloud-arrow-up-fill"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" class="bi bi-cloud-arrow-up"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z" />
-                <path
-                    d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
-            </svg>
-        </button>
+        <br><br>
+        <div>
+            <button type="submit" class="uploadbutton">
+                <i class="bi bi-cloud-arrow-up-fill"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-cloud-arrow-up"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2z" />
+                    <path
+                        d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                </svg>
+            </button>
+        </div>
     </form>
     <h2>File List</h2>
     <table class="table">
@@ -123,7 +164,5 @@
                     <% }); %>
         </tbody>
     </table>
-    
-
 </body>
 </html>
