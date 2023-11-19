@@ -1,0 +1,23 @@
+CDK Role Description:
+My main duty as an RPA Solution Developer is to develop and execute robotic process automation solutions that improve accuracy and efficiency in operations. I carefully crafted automation scripts that mimic manual operations within business processes, developing both process-level and object-level logic. Apart from the aforementioned, my responsibility includes the entire RPA development lifecycle, from the initial design to the post-deployment maintenance.
+
+As the company's first RPA Developer, I also created deployment packages to make sure the automation was prepared for a smooth transition into the production (PROD) environment. Paying close attention to detail also applies to testing, where I will find and fix any flaws to guarantee the automation runs without a hitch.
+
+Furthermore, I prioritised prompt issue resolution and system stability in my comprehensive support plan, which I developed to handle any problems that could come up after deployment. Additionally, I kept up with documentation that appropriately reflects the most recent process flows. Most importantly, during the migration, you'll take into account and incorporate business enhancement demands into the RPA solution to make sure it stays in line with changing business needs.
+
+As CDK Global's first RPA Developer, I play a critical role in advancing the organization's adoption of RPA, enhancing business procedures, and proactively addressing the ever-changing demands of the business environment.
+
+
+Capco Technologies:
+As a Continuous Improvement Specialist, you play a crucial role in driving operational excellence throughout the team. Collaborated with product teams to optimise routine business procedures so that quality and efficiency are maintained throughout the process.
+
+Moreoever, I additionally contributed to shape the pipeline of opportunities for projects related to Continuous Delivery and Improvement (CI/CD) prior making it to RPA Ready. In order to improve efficiency and streamline operations, you closely collaborate with cross-functional teams to develop and implement improvements to current procedures.
+
+You also offer valuable assistance in maintaining and improving the product automations that are in operation. Your knowledge aids in problem solving, improves automation scripts, and guarantees that automated procedures function properly and provide the expected outcomes.
+
+UST Global:
+Worked as the lead for process automation, coordinating efforts to automate tasks and streamlining development processes. I was responsible for of several crucial responsibilities that make the automation team successful.
+
+I begin my work by gathering requirements for automation and carefully creating design blueprints for automation. You collaborate closely with stakeholders to comprehend their requirements and turn them into plans that the automation team can implement.
+
+In order to make sure that automation projects are on schedule and provide value, as the Process Automation Lead, I collaborated with the business analyst to create sprint plans, breakdown tasks, and organise the team's activities. In order to promote continuous development and make sure the team gains knowledge from its experiences, i lead sprint reviews and retrospective sessions.

@@ -38,8 +38,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
   res.redirect('/');
 })
 
-
-//down
+//downloads the file
 app.get('/download/:fileName', (req, res) => {
   const fileName = req.params.fileName;
   const filePath = path.join('uploads', fileName);
